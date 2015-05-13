@@ -1,7 +1,7 @@
 module DelaydJobSlackNotification
   class Railtie < Rails::Railtie
     rake_tasks do
-      load "tasks/notify_delayed_job_count.rake"
+      load "tasks/delayed_job_slack_notification.rake"
     end
   end
 end
