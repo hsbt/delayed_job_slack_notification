@@ -27,6 +27,8 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_dependency "delayed_job_active_record"
+  spec.add_dependency "slack-notifier"
+  spec.add_dependency "activesupport"
 
   spec.add_development_dependency "bundler"
   spec.add_development_dependency "rake"
