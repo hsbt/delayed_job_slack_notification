@@ -1,5 +1,6 @@
 require "delayed_job_slack_notification/version"
 
+require 'delayed_job_active_record'
 require 'active_support/all'
 
 module DelayedJobSlackNotification

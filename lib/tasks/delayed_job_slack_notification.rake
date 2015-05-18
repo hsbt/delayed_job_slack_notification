@@ -1,4 +1,3 @@
-require 'delayed_job_active_record'
 require 'net/http'
 require 'json'
 
