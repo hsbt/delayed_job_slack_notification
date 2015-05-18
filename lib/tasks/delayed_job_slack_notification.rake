@@ -17,7 +17,14 @@ namespace :jobs do
 
     if alert && icon
       uri = URI.parse(DelayedJobSlackNotification.webhook_url)
-      params = {'payload' => {"channel" => DelayedJobSlackNotification.channel, "username" => DelayedJobSlackNotification.username, "text" => alert, "icon_emoji" => icon}.to_json}
+      params = {
+        payload: {
+          channel: DelayedJobSlackNotification.channel,
+          username: DelayedJobSlackNotification.username,
+          text: alert,
+          icon_emoji: icon
+        }.to_json
+      }
       Net::HTTP.post_form(uri, params)
     end
   end
